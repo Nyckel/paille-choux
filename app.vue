@@ -4,7 +4,9 @@
   <NavetIcon id="static-navet" class="static" />
 
   <div id="pageContent">
-    <NavBar />
+    <ClientOnly>
+      <NavBar />
+    </ClientOnly>
     <Header />
     <MSV />
     <FindOurProducts />
