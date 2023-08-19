@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   ssr: false,
   nitro: {
-    preset: "netlify-static",
+    preset: "netlify",
   },
   devtools: { enabled: true },
   modules: ["nuxt-svgo"],
