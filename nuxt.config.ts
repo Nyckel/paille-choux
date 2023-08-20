@@ -6,4 +6,7 @@ export default defineNuxtConfig({
   svgo: {
     defaultImport: "component",
   },
+  image: {
+    format: ["webp"],
+  },
 });
