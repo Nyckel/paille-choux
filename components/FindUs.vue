@@ -22,8 +22,8 @@
       </div>
 
       <div class="images">
-        <nuxt-img src="assets/maison.png" alt="La maison" />
-        <nuxt-img src="assets/serres.png" alt="Les serres" />
+        <nuxt-img src="images/maison.png" alt="La maison" />
+        <nuxt-img src="images/serres.png" alt="Les serres" />
       </div>
     </div>
   </section>
