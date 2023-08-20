@@ -7,6 +7,7 @@
     margin: 0;
     padding: 4rem;
     position: fixed;
+    z-index: 99;
 
     li {
       list-style-type: none;

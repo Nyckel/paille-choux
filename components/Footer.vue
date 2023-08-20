@@ -26,6 +26,10 @@
           <li>Identité de l'entreprise</li>
           <li>Identifiant RCS</li>
           <li>Identifiant TVA</li>
+          <li>
+            Hébergement:
+            <a href="https://www.netlify.com/" target="_blank">Netlify</a>
+          </li>
         </ul>
       </div>
       <div class="RGPD info">
@@ -101,11 +105,14 @@ import Logo2 from "assets/Logo2.svg";
           display: flex;
           align-items: stretch;
           height: 1rem;
-          gap: 1rem;
+          gap: 0.3rem;
 
           span {
             font-weight: normal;
             font-size: 1rem;
+          }
+          a {
+            color: inherit;
           }
         }
       }
