@@ -16,7 +16,7 @@
           </li>
           <li>
             <PinIcon />
-            <span>3 place des choux</span>
+            <span>507 route de Vignoc 35630 Langouët</span>
           </li>
         </ul>
       </div>

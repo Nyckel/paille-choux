@@ -3,4 +3,5 @@ export type MSVStep = {
   date?: string;
   image?: string;
   imagePlaceholder?: string;
+  alt?: string;
 };

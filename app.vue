@@ -1,4 +1,9 @@
 <template>
+  <Head>
+    <Title>{{ seo.title }}</Title>
+    <Meta name="description" :content="seo.title" />
+  </Head>
+
   <ChouxIcon id="static-choux" class="static" />
   <CarotteIcon id="static-carotte" class="static" />
   <NavetIcon id="static-navet" class="static" />
@@ -57,4 +62,18 @@
 import ChouxIcon from "assets/Choux.svg";
 import CarotteIcon from "assets/Carotte.svg";
 import NavetIcon from "assets/Navet.svg";
+
+const seo = {
+  title: "Paille Choux",
+  description:
+    "Paille-Choux est une ferme installée en maraîchage à Langouët en 2023.",
+};
+
+useHead({
+  htmlAttrs: {
+    lang: "fr",
+  },
+  title: seo.title,
+  description: seo.description,
+});
 </script>
