@@ -90,28 +90,13 @@
       />
     </svg>
     <div class="content">
-      <ul class="nav">
-        <li
-          v-for="navItem of navItems"
-          :class="{ active: current === navItem.class }"
-        >
-          <a :href="'#' + navItem.class">{{ navItem.description }}</a>
-          <Carrot
-            class="carrot"
-            :style="{
-              visibility: current === navItem.class ? 'visible' : 'hidden',
-            }"
-          />
-        </li>
-      </ul>
-
-      <img class="bio-logo" src="assets/AB.png" alt="Logo AB" />
+      <nuxt-img class="bio-logo" src="assets/AB.png" alt="Logo AB" />
 
       <div class="logo-zone">
         <LogoComplet id="headerLogo" :class="{ 'nuxt-icon--fill': false }" />
 
         <section id="intro">
-          <img src="assets/thomas.png" alt="Thomas Helbert" />
+          <nuxt-img src="assets/thomas.png" alt="Thomas Helbert" />
           <p>
             Je m'appelle <b>Thomas</b>.<br />
             Je me suis installé en Janvier 2023 sur de bonnes terres limoneuses

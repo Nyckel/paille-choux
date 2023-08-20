@@ -17,7 +17,7 @@
           <b>{{ step.date }}</b>
           {{ step.description }}</span
         >
-        <img
+        <nuxt-img
           v-if="step.image"
           class="step-image"
           :src="step.image"
@@ -114,7 +114,7 @@ const steps: MSVStep[] = [
       }
 
       .step-description {
-        // padding: 4rem;
+        flex: 1;
         padding: 1rem;
       }
 

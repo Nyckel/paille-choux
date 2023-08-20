@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   ssr: true,
   devtools: { enabled: true },
-  modules: ["nuxt-svgo"],
+  modules: ["nuxt-svgo", "@nuxt/image"],
   svgo: {
     defaultImport: "component",
   },
