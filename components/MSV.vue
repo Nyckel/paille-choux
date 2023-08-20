@@ -35,18 +35,18 @@ const steps: MSVStep[] = [
   {
     date: "Octobre 2022",
     description: "Un couvert végétal de Seigle et Avoine est semé.",
-    image: "assets/tracteur.png",
+    image: "tracteur.png",
   },
   {
     date: "Mai 2023",
     description:
       "Le couvert végétal est arrivé à épiaison. Je le couche avec un rouleau faca (rouleau avec des lames qui pincent les tiges du couvert végétal).",
-    image: "assets/couche.png",
+    image: "couche.png",
   },
   {
     description:
       "Je mets une bâche d’ensilage par dessus pendant 1 mois pour que le couvert ne puisse pas se relever. Je mets ensuite un paillage (paille ou foin) par dessus pour limiter la poussée d’aventices appelé communément mauvaise herbes.",
-    image: "assets/bache.png",
+    image: "bache.png",
   },
   {
     description:
