@@ -21,7 +21,7 @@
           v-if="step.image"
           class="step-image"
           :src="step.image"
-          :placeholder="step.imagePlaceholder"
+          :alt="step.alt"
         />
       </div>
     </div>

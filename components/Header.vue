@@ -111,7 +111,7 @@
         <LogoComplet id="headerLogo" :class="{ 'nuxt-icon--fill': false }" />
 
         <section id="intro">
-          <img src="assets/thomas.png" />
+          <img src="assets/thomas.png" alt="Thomas Helbert" />
           <p>
             Je m'appelle <b>Thomas</b>.<br />
             Je me suis installé en Janvier 2023 sur de bonnes terres limoneuses
