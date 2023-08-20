@@ -17,7 +17,7 @@
           <b>{{ step.date }}</b>
           {{ step.description }}</span
         >
-        <nuxt-img
+        <nuxt-picture
           v-if="step.image"
           class="step-image"
           :src="step.image"
@@ -35,20 +35,20 @@ const steps: MSVStep[] = [
   {
     date: "Octobre 2022",
     description: "Un couvert végétal de Seigle et Avoine est semé.",
-    image: "images/tracteur.png",
+    image: "images/tracteur.webp",
     alt: "tracteur",
   },
   {
     date: "Mai 2023",
     description:
       "Le couvert végétal est arrivé à épiaison. Je le couche avec un rouleau faca (rouleau avec des lames qui pincent les tiges du couvert végétal).",
-    image: "images/couche.png",
+    image: "images/couche.webp",
     alt: "champs",
   },
   {
     description:
       "Je mets une bâche d’ensilage par dessus pendant 1 mois pour que le couvert ne puisse pas se relever. Je mets ensuite un paillage (paille ou foin) par dessus pour limiter la poussée d’aventices appelé communément mauvaise herbes.",
-    image: "images/bache.png",
+    image: "images/bache.webp",
     alt: "bache",
   },
   {

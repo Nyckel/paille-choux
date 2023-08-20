@@ -90,13 +90,17 @@
       />
     </svg>
     <div class="content">
-      <nuxt-img class="bio-logo" src="images/AB.png" alt="Logo AB" />
+      <nuxt-picture class="bio-logo" src="images/AB.webp" alt="Logo AB" />
 
       <div class="logo-zone">
         <LogoComplet id="headerLogo" :class="{ 'nuxt-icon--fill': false }" />
 
         <section id="intro">
-          <nuxt-img src="images/thomas.png" alt="Thomas Helbert" />
+          <nuxt-picture
+            src="images/thomas.webp"
+            format="webp,avif"
+            alt="Thomas Helbert"
+          />
           <p>
             Je m'appelle <b>Thomas</b>.<br />
             Je me suis installé en Janvier 2023 sur de bonnes terres limoneuses

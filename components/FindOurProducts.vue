@@ -2,7 +2,7 @@
   <section id="find-our-products">
     <h1>Où trouver nos produits ?</h1>
     <div class="amap selling-point">
-      <nuxt-img src="images/amap.png" alt="Réseau AMAP logo" />
+      <nuxt-picture src="images/amap.webp" alt="Réseau AMAP logo" />
       <div class="description">
         <h2>Les jeudis soir à partir de Septembre 2023</h2>
         <p>
@@ -13,7 +13,7 @@
       </div>
     </div>
     <div class="patates selling-point">
-      <nuxt-img src="images/patates.png" alt="Le champs de patates logo" />
+      <nuxt-picture src="images/patates.webp" alt="Le champs de patates logo" />
       <div class="description">
         <h2>Le mercredi de 16h à 19h</h2>
         <p>
