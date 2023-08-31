@@ -8,7 +8,7 @@
         <p>
           Une AMAP (Association pour le maintien d'une Agriculture Paysanne) est
           en cours de création sur la commune de Gévezé. La distribution de
-          paniers de légumes aura lieu tous les .
+          paniers de légumes aura lieu tous les jeudis.
         </p>
       </div>
     </div>

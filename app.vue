@@ -1,9 +1,4 @@
 <template>
-  <Head>
-    <Title>{{ seo.title }}</Title>
-    <Meta name="description" :content="seo.title" />
-  </Head>
-
   <ChouxIcon id="static-choux" class="static" />
   <CarotteIcon id="static-carotte" class="static" />
   <NavetIcon id="static-navet" class="static" />
@@ -58,7 +53,7 @@
   left: 100px;
 }
 </style>
-<script setup>
+<script setup lang="ts">
 import ChouxIcon from "assets/Choux.svg";
 import CarotteIcon from "assets/Carotte.svg";
 import NavetIcon from "assets/Navet.svg";
@@ -67,6 +62,15 @@ const seo = {
   title: "Paille Choux",
   description:
     "Paille-Choux est une ferme installée en maraîchage à Langouët en 2023.",
+  url: "paillechoux.fr",
+  locale: "fr_FR",
+  color: "#00584b",
+  image: {
+    url: "https://paillechoux.fr/_ipx/_/images/maison.webp",
+    width: 438,
+    height: 269,
+    alt: "Devant la ferme",
+  },
 };
 
 useHead({
@@ -74,6 +78,51 @@ useHead({
     lang: "fr",
   },
   title: seo.title,
+  meta: [
+    {
+      name: "description",
+      content: seo.description,
+    },
+  ],
+});
+useSeoMeta({
+  title: seo.title,
   description: seo.description,
+  author: "Thomas HELBERT",
+  applicationName: seo.title,
+  creator: "Mathis OUARNIER",
+  publisher: "Mathis OUARNIER",
+  robots: {
+    index: true,
+    follow: true,
+    all: true,
+    noindex: false,
+    nofollow: false,
+    none: false,
+    noarchive: false,
+    nositelinkssearchbox: false,
+    nosnippet: false,
+    indexifembedded: false,
+    notranslate: false,
+  },
+  ogUrl: seo.url,
+  ogTitle: seo.title,
+  ogDescription: seo.description,
+  ogType: "website",
+  ogLocale: seo.locale,
+  twitterCard: "summary",
+  twitterTitle: seo.title,
+  twitterDescription: seo.description,
+  twitterImage: {
+    ...seo.image,
+  },
+  twitterSite: seo.url,
+  themeColor: seo.color,
+  mobileWebAppCapable: "yes",
+  appleMobileWebAppCapable: "yes",
+  appleMobileWebAppStatusBarStyle: "black",
+  appleMobileWebAppTitle: seo.title,
+  msapplicationTileImage: seo.image.url,
+  msapplicationTileColor: seo.color,
 });
 </script>
