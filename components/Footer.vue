@@ -12,7 +12,7 @@
           </li>
           <li>
             <PhoneIcon />
-            <span>06 07 08 09 10</span>
+            <span>06 20 86 82 91</span>
           </li>
           <li>
             <PinIcon />
@@ -23,9 +23,16 @@
       <div class="legal info">
         <h2>Mentions légales</h2>
         <ul>
-          <li>Identité de l'entreprise</li>
-          <li>Identifiant RCS</li>
-          <li>Identifiant TVA</li>
+          <li>
+            Identité de l'entreprise:
+            <a
+              href="https://www.societe.com/societe/monsieur-thomas-helbert-948120761.html"
+              target="_blank"
+              >EI Thomas Helbert</a
+            >
+          </li>
+          <li>Identifiant RCS: ....</li>
+          <li>Identifiant TVA: FR61948120761</li>
           <li>
             Hébergement:
             <a href="https://www.netlify.com/" target="_blank">Netlify</a>
