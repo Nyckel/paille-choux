@@ -2,6 +2,11 @@
 export default defineNuxtConfig({
   site: {
     url: "https://paillechoux.fr",
+    name: "Paille Choux",
+    $dev: {
+      url: "http://localhost:3000",
+      name: "Paille Choux DEV",
+    },
   },
   ssr: true,
   devtools: { enabled: true },
@@ -15,4 +20,9 @@ export default defineNuxtConfig({
     defaultImport: "component",
   },
   image: {},
+  sitemap: {},
+  robots: {
+    allow: ["/"],
+    credits: false,
+  },
 });

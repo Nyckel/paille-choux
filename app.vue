@@ -125,4 +125,5 @@ useSeoMeta({
   msapplicationTileImage: seo.image.url,
   msapplicationTileColor: seo.color,
 });
+defineRobotMeta();
 </script>
