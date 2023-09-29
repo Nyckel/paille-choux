@@ -106,6 +106,7 @@ import Logo2 from "assets/Logo2.svg";
         li {
           svg {
             width: 1rem;
+            margin-right: .5rem;
           }
 
           list-style-type: none;
