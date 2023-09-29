@@ -31,7 +31,7 @@
               >EI Thomas Helbert</a
             >
           </li>
-          <li>Identifiant RCS: ....</li>
+          <li>Numéro SIREN: 948120761</li>
           <li>Identifiant TVA: FR61948120761</li>
           <li>
             Hébergement:
@@ -109,10 +109,6 @@ import Logo2 from "assets/Logo2.svg";
           }
 
           list-style-type: none;
-          display: flex;
-          align-items: stretch;
-          height: 1rem;
-          gap: 0.3rem;
 
           span {
             font-weight: normal;
