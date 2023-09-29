@@ -1,6 +1,6 @@
-# Nuxt 3 Minimal Starter
+# Paille-Choux marketing farm
+[![Netlify Status](https://api.netlify.com/api/v1/badges/934a0c49-d193-455b-9d3b-2d8ad953aee2/deploy-status)](https://app.netlify.com/sites/legendary-kashata-fdb9e3/deploys)
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
 ## Setup
 
