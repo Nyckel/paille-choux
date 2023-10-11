@@ -103,9 +103,9 @@
             à Langouët.<br /><br />Nous (mon amie et moi) habitons sur le lieu
             de la ferme. J'ai 3 ha de terrain, 1 ha en maraîchage et 2 ha en
             prairie dont une partie sera transformé en Verger.<br /><br />
-            Je cultive la plupart des légumes. Je suis certifié label bio par
-            écocert. Je pratique les techniques dites du <b>MSV</b> (Maraîchage
-            sur Sol Vivant).
+            Je cultive une quarantaine de légumes. Je suis certifié label bio
+            par écocert. Je pratique les techniques dites du
+            <b>MSV</b> (Maraîchage sur Sol Vivant).
           </p>
         </section>
       </div>
