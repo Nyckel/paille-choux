@@ -61,7 +61,7 @@ import NavetIcon from "assets/Navet.svg";
 const seo = {
   title: "Paille Choux",
   description:
-    "Paille-Choux est une ferme installée en maraîchage à Langouët en 2023.",
+    "Paille-Choux est une ferme installée en maraîchage à Langouët au nord de Rennes. Thomas Helbert y pratique le maraîchage BIO en MSV.",
   url: "paillechoux.fr",
   locale: "fr_FR",
   color: "#00584b",
