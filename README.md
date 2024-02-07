@@ -61,3 +61,8 @@ yarn preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+Pages:
+[] / avec contenu actuel de app.vue
+[] /actus liste les news, avec la dernière en hero section
+[] /actus/[slug] blog-post

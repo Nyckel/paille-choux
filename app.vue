@@ -7,10 +7,7 @@
     <ClientOnly>
       <NavBar />
     </ClientOnly>
-    <Header />
-    <MSV />
-    <FindOurProducts />
-    <FindUs />
+    <NuxtPage />
     <Footer />
   </div>
 </template>

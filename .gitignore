@@ -24,3 +24,6 @@ logs
 
 # Local Netlify folder
 .netlify
+
+# Unlighthouse
+.unlighthouse
