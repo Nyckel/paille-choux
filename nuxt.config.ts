@@ -16,9 +16,15 @@ export default defineNuxtConfig({
   },
   ssr: true,
   devtools: { enabled: true },
+  content: {
+    markdown: {
+      anchorLinks: false
+    }
+  },
   modules: [
     "nuxt-svgo",
     "@nuxt/image",
+    "@nuxt/content",
     "nuxt-simple-robots",
     "nuxt-simple-sitemap",
   ],

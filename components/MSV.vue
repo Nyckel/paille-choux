@@ -1,31 +1,19 @@
 <template>
-  <section id="msv">
-    <h1>Le Maraîchage sur Sol Vivant</h1>
-    <b>
-      L’idée du MSV est de favoriser la vie du sol. Cela se traduit par:<br /><br />
-      un travail du sol réduit<br />
-      la pratique des couverts végétaux<br />
-      l'apport de matières organiques
-    </b>
+  <ContentRenderer id="msv" :value="msvIntro" tag="section" />
+  <!-- <ContentRendererMarkdown :value="msvIntro" /> -->
 
-    <h2>Exemple: La culture du choux</h2>
+  <!-- <h2>Exemple: La culture du choux</h2>
 
-    <div class="steps">
-      <div class="step" v-for="(step, index) in steps">
-        <div class="step-number">{{ index + 1 }}</div>
-        <span class="step-description">
-          <b>{{ step.date }}</b>
-          {{ step.description }}</span
-        >
-        <nuxt-img
-          v-if="step.image"
-          class="step-image"
-          :src="step.image"
-          :alt="step.alt"
-        />
-      </div>
+  <div class="steps">
+    <div class="step" v-for="(step, index) in steps">
+      <div class="step-number">{{ index + 1 }}</div>
+      <span class="step-description">
+        <b>{{ step.date }}</b>
+        {{ step.description }}</span>
+      <nuxt-img v-if="step.image" class="step-image" :src="step.image" :alt="step.alt" />
     </div>
-  </section>
+  </div> -->
+  <!-- </ContentRenderer> -->
 </template>
 
 <script setup lang="ts">
@@ -56,10 +44,13 @@ const steps: MSVStep[] = [
       " Je peux ensuite planter les choux début Juillet. La destruction progressive du couvert dans le sol laisse un réseau favorable pour la vie de ce dernier. Ainsi, l’apport de matière organique se fait par le couvert en lui-même et le paillage.",
   },
 ];
+
+const { data: msvIntro } = await useAsyncData('msv', () => queryContent('landing/msv').findOne());
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
 @import "../globals.scss";
+
 #msv {
   max-width: 1000px;
   margin: 0 auto;
@@ -74,27 +65,34 @@ const steps: MSVStep[] = [
     color: $lighter-green;
   }
 
-  .steps {
-    // border-left: 3px solid var(--main-green, #00584b);
-    // border-right: 3px solid var(--main-green, #00584b);
+  ol {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 
-    .step {
+    li {
       display: flex;
       gap: 2rem;
       align-items: center;
       position: relative;
-      // border-top: 1px dashed var(--main-green, #00584b);
       justify-content: space-between;
+      counter-increment: counterName;
+
+      span {
+        flex: 1;
+      }
 
       @media screen and (max-width: 768px) {
         flex-wrap: wrap;
         justify-content: center;
       }
 
-      .step-number {
+      strong {
+        flex: 1;
+      }
+
+      &:before {
+        content: '' counter(counterName);
         font-size: 3rem;
         font-weight: 800;
         color: var(--main-green, #00584b);
@@ -103,7 +101,7 @@ const steps: MSVStep[] = [
         font-size: 3rem;
         font-style: normal;
         line-height: normal;
-
+        flex-shrink: 0;
         width: 60px;
         height: 60px;
         display: flex;
@@ -113,13 +111,30 @@ const steps: MSVStep[] = [
         border-radius: 100%;
       }
 
+      img {
+        border-radius: 10px;
+      }
+    }
+  }
+
+  .steps {
+    // border-left: 3px solid var(--main-green, #00584b);
+    // border-right: 3px solid var(--main-green, #00584b);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .step {
+
+
+      .step-number {}
+
       .step-description {
         flex: 1;
         padding: 1rem;
       }
 
-      .step-image {
-      }
+      .step-image {}
     }
   }
 }
