@@ -1,6 +1,8 @@
 <template>
-  <section id="find-us">
-    <h1>Où nous trouver ?</h1>
+  <ContentRenderer id="find-us" :value="findUs" tag="section" />
+
+  <!-- <section id="find-us"> -->
+  <!-- <h1>Où nous trouver ?</h1>
 
     <div class="content">
       <div class="text-map">
@@ -24,10 +26,10 @@
         <nuxt-img src="images/maison.webp" alt="La maison" />
         <nuxt-img src="images/serres.webp" alt="Les serres" />
       </div>
-    </div>
-  </section>
+    </div> -->
+  <!-- </section> -->
 </template>
-<style scoped lang="scss">
+<style lang="scss">
 @import "../globals.scss";
 
 #find-us {
@@ -40,30 +42,22 @@
     color: $main-green;
   }
 
-  .content {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    .text-map {
-      flex: 1;
+  iframe {
+    width: 100%;
+    border-radius: 15px;
+  }
 
-      iframe {
-        border-radius: 15px;
-        width: 100%;
-      }
-    }
-    .images {
-      flex-shrink: 1;
-      display: flex;
-      flex-wrap: wrap;
-      max-width: 100%;
-      gap: 1rem;
+  img {
+    min-width: 200px;
+    max-width: 100%;
+    margin-top: 1rem;
 
-      img {
-        flex: 1;
-        min-width: 200px;
-      }
+    &:first-of-type {
+      margin-right: 1rem;
     }
   }
 }
 </style>
+<script setup lang="ts">
+const { data: findUs } = await useAsyncData('find-us', () => queryContent('landing/find-us').findOne());
+</script>

@@ -1,50 +1,8 @@
 <template>
   <ContentRenderer id="msv" :value="msvIntro" tag="section" />
-  <!-- <ContentRendererMarkdown :value="msvIntro" /> -->
-
-  <!-- <h2>Exemple: La culture du choux</h2>
-
-  <div class="steps">
-    <div class="step" v-for="(step, index) in steps">
-      <div class="step-number">{{ index + 1 }}</div>
-      <span class="step-description">
-        <b>{{ step.date }}</b>
-        {{ step.description }}</span>
-      <nuxt-img v-if="step.image" class="step-image" :src="step.image" :alt="step.alt" />
-    </div>
-  </div> -->
-  <!-- </ContentRenderer> -->
 </template>
 
 <script setup lang="ts">
-import { MSVStep } from "types/MSVStep";
-
-const steps: MSVStep[] = [
-  {
-    date: "Octobre 2022",
-    description: "Un couvert végétal de Seigle et Avoine est semé.",
-    image: "images/tracteur.webp",
-    alt: "tracteur",
-  },
-  {
-    date: "Mai 2023",
-    description:
-      "Le couvert végétal est arrivé à épiaison. Je le couche avec un rouleau faca (rouleau avec des lames qui pincent les tiges du couvert végétal).",
-    image: "images/couche.webp",
-    alt: "champs",
-  },
-  {
-    description:
-      "Je mets une bâche d’ensilage par dessus pendant 1 mois pour que le couvert ne puisse pas se relever. Je mets ensuite un paillage (paille ou foin) par dessus pour limiter la poussée d’aventices appelé communément mauvaise herbes.",
-    image: "images/bache.webp",
-    alt: "bache",
-  },
-  {
-    description:
-      " Je peux ensuite planter les choux début Juillet. La destruction progressive du couvert dans le sol laisse un réseau favorable pour la vie de ce dernier. Ainsi, l’apport de matière organique se fait par le couvert en lui-même et le paillage.",
-  },
-];
-
 const { data: msvIntro } = await useAsyncData('msv', () => queryContent('landing/msv').findOne());
 </script>
 
@@ -69,6 +27,7 @@ const { data: msvIntro } = await useAsyncData('msv', () => queryContent('landing
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    padding: 0;
 
     li {
       display: flex;

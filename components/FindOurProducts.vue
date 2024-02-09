@@ -1,30 +1,7 @@
 <template>
-  <section id="find-our-products">
-    <h1>Où trouver nos produits ?</h1>
-    <div class="amap selling-point">
-      <nuxt-img src="images/amap.webp" alt="Réseau AMAP logo" />
-      <div class="description">
-        <h2>Les jeudis soir à partir de Septembre 2023</h2>
-        <p>
-          Une AMAP (Association pour le maintien d'une Agriculture Paysanne) est
-          en cours de création sur la commune de Gévezé. La distribution de
-          paniers de légumes aura lieu tous les jeudis.
-        </p>
-      </div>
-    </div>
-    <div class="patates selling-point">
-      <nuxt-img src="images/patates.webp" alt="Le champs de patates logo" />
-      <div class="description">
-        <h2>Le mercredi de 16h à 19h</h2>
-        <p>
-          Je vais également partager une vente de légumes avec le champ de
-          Patates sur la commune de Langouët.
-        </p>
-      </div>
-    </div>
-  </section>
+  <ContentRenderer id="find-our-products" :value="findProducts" tag="section" />
 </template>
-<style scoped lang="scss">
+<style lang="scss">
 @import "../globals.scss";
 
 #find-our-products {
@@ -37,22 +14,35 @@
     color: $main-green;
   }
 
-  .selling-point {
-    display: flex;
-    align-items: center;
-    margin-bottom: 2rem;
-    justify-content: center;
-    .description {
-      margin-left: 2rem;
+  ul {
+    padding: 0;
 
-      h2 {
-        color: $lighter-green;
+    li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 2rem;
+      justify-content: center;
+      list-style-type: none;
+
+      blockquote {
+        margin-left: 2rem;
+
+        h2 {
+          color: $lighter-green;
+        }
       }
-    }
 
-    @media screen and (max-width: 550px) {
-      flex-wrap: wrap;
+      @media screen and (max-width: 550px) {
+        flex-wrap: wrap;
+
+        blockquote {
+          margin: 0;
+        }
+      }
     }
   }
 }
 </style>
+<script setup lang="ts">
+const { data: findProducts } = await useAsyncData('products', () => queryContent('landing/find-products').findOne());
+</script>
