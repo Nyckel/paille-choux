@@ -22,6 +22,7 @@ export default defineNuxtConfig({
     }
   },
   modules: [
+    '@nuxthq/studio',
     "nuxt-svgo",
     "@nuxt/image",
     "@nuxt/content",
