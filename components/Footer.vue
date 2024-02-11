@@ -30,6 +30,10 @@ const { data: rgpd } = await useAsyncData('rgpd', () => queryContent('landing/rg
   align-items: center;
   padding: 5rem;
 
+  @media screen and (max-width: 550px) {
+    padding: 2rem;
+  }
+
   #footerLogo {
     width: 15rem;
     margin: 0 auto;
@@ -49,7 +53,6 @@ const { data: rgpd } = await useAsyncData('rgpd', () => queryContent('landing/rg
     width: 100%;
     gap: 3rem;
     justify-content: center;
-    width: 80%;
     max-width: 1300px;
     padding: 2rem 0;
     margin: 0 auto;
